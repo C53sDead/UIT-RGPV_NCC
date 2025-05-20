@@ -1,0 +1,107 @@
+/* styles.css */
+
+:root {
+  --red: #b91c1c;
+  --green: #15803d;
+  --blue: #1e3a8a;
+  --text: #1f2937;
+  --background: #f9fafb;
+  --card-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --red: #f87171;
+    --green: #4ade80;
+    --blue: #60a5fa;
+    --text: #f9fafb;
+    --background: #1f2937;
+    --card-bg: #374151;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.hero {
+  background-color: var(--red);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.red h2 {
+  color: var(--red);
+}
+
+.card.green h2 {
+  color: var(--green);
+}
+
+.card.blue h2 {
+  color: var(--blue);
+}
+
+.quick-links {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.quick-links h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.links a:hover {
+  background-color: var(--red);
+}
+
+footer {
+  background: var(--red);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
