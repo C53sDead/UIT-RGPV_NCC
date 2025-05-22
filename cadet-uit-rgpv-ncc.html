@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadets - UIT-RGPV NCC</title>
+  <link rel="stylesheet" href="home-page.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .cadets-section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      color: #002147;
+      text-align: center;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .cadet-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      background-color: #f9f9f9;
+    }
+
+    .cadet-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .cadet-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .cadet-content {
+      padding: 1rem;
+    }
+
+    .cadet-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #002147;
+      margin-bottom: 0.5rem;
+    }
+
+    .cadet-info {
+      margin: 0.25rem 0;
+    }
+
+    .extra-info {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+
+    .cadet-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #ddd; /* light gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+  </style>
+</head>
+<body>
+    <nav class="main-nav">
+    <div class="nav-left">
+        <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="UIT RGPV NCC Logo" class="nav-logo" />
+        <span class="nav-title">UIT-RGPV NCC</span>
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="clubs.html" class="nav-link">Clubs</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="hall-of-fame.html" class="nav-link">Hall of Fame</a></li>
+    </ul>
+    <div class="nav-right">
+        <a href="recruitment.html" class="btn-recruitment">Recruitment</a>
+    </div>
+    </nav>
+
+  <header>
+    <div><strong>UIT-RGPV NCC</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="unit.html">Unit</a>
+      <a href="ano.html">ANO</a>
+      <a href="cadets.html">Cadets</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="cadets-section">
+    <h1>Current Cadets</h1>
+    <div class="cards-container">
+      <div class="cadet-card">
+        <img src="assets/images/rohit.jpg" alt="Rohit Sharma" class="cadet-image-placeholder" />
+        <div class="cadet-content">
+          <div class="cadet-name">Rohit Sharma</div>
+          <div class="cadet-info"><strong>Year:</strong> 2nd Year</div>
+          <div class="cadet-info"><strong>Department:</strong> Mechanical</div>
+          <div class="cadet-info"><strong>Rank:</strong> Cadet</div>
+          <div class="extra-info">Participated in RDC Camp 2024</div>
+        </div>
+      </div>
+
+      <div class="cadet-card">
+        <img src="assets/images/priya.jpg" alt="Priya Verma" class="cadet-image-placeholder" />
+        <div class="cadet-content">
+          <div class="cadet-name">Priya Verma</div>
+          <div class="cadet-info"><strong>Year:</strong> 3rd Year</div>
+          <div class="cadet-info"><strong>Department:</strong> Computer Science</div>
+          <div class="cadet-info"><strong>Rank:</strong> Senior Under Officer</div>
+          <div class="extra-info">Lead the CATC-7 team, excellent in drill</div>
+        </div>
+      </div>
+
+      <div class="cadet-card">
+        <img src="assets/images/amit.jpg" alt="Amit Singh" class="cadet-image-placeholder" />
+        <div class="cadet-content">
+          <div class="cadet-name">Amit Singh</div>
+          <div class="cadet-info"><strong>Year:</strong> 1st Year</div>
+          <div class="cadet-info"><strong>Department:</strong> Electrical</div>
+          <div class="cadet-info"><strong>Rank:</strong> Cadet</div>
+          <div class="extra-info">Joined recently, active in social service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
